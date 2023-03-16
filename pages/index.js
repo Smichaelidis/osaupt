@@ -16,7 +16,7 @@ export default function Home() {
       <main>
         <h1>Hello {session?.user?.email || "Unknown"}</h1>
         {session?.user?.email ? (
-          <button onClick={() => signOut()}>Sign Out</button>
+            <button onClick={() => signOut()}>Sign Out</button>
         ) : (
           <Link href="/login">
             <button onClick={() => signIn()}>Sign In</button>
